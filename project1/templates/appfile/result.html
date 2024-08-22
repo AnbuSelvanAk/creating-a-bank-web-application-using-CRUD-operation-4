@@ -1,0 +1,32 @@
+<html>
+<head><h1 style="text-align:center;color:blue;font-size:x-large;">SYSTECH GROUP</h1></head>
+<style>
+	table{
+		border-color:white;border-spacing:10px;}
+	th{color:blue;border-color:white;}</style><center>
+<body><h2 style="text-align:center;color:red">PRODUCT LISTS</h2>
+<table border='2'>
+<thread>
+	<th>ACCOUNT NO</th>
+	<th>HOLDER NAME</th>
+	<th>DEPOSIT AMOUNT</th>
+	<th>AVAILABLE AMOUNT</th>\
+	<th>UPDATE</th>
+	<th>DELETE</th>
+</thead>
+{%for i in b%}
+
+<tr>
+<td>{{i.acno}}</td>
+<td>{{i.name}}</td>
+<td>{{i.depamnt}}</td>
+<td>{{i.bal}}</td>
+<td><a href="/update/{{i.id}}">Click</a></td>
+<td><a href="/delete/{{i.id}}">Click</a></td>
+
+</tr>
+{%endfor%}
+</table>
+</body>
+</center>
+</html>

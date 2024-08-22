@@ -1,0 +1,21 @@
+<html>
+<head><h1 style="text-align:center;color:blue;font-size:x-large;">SYSTECH GROUP</h1></head>
+<style>
+	table{
+		border-color:white;border-spacing:10px;}
+	th{
+		color:blue;
+	border-color:white;}</style>
+	
+<center>
+<body>
+<h2 style="color:red;text-align:center;">INSERT RECORD</h2>
+<form method="POST" style="color:blue;text-align:justify;">
+	{{form.as_p}}
+	{%csrf_token%}
+	<input type="submit" values="SUBMIT">
+
+</form>
+</body>
+</center>
+</html>
